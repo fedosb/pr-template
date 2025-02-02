@@ -1,13 +1,6 @@
-<!--
-- Make sure the PR type is selected correctly to properly classify the changes.
-- The description should be concise but clear to all team members.
-- QA and Post-deploy instructions are important to minimize issues during testing and deployment.
-- Check the checklist before submitting the PR to avoid missed items.
--->
-
 ## Important notes
 <!--
-Remove unnecessary items, keep relevant ones.
+These notes are needed if the PR contains significant changes.
 -->
 - **Breaking Change**. Some of the changes in this PR cause malfunctioning of the existing features. 
 Please consider this before merging.
