@@ -1,5 +1,11 @@
 package main
 
+import (
+	"fmt"
+
+	"github.com/fedosb/pr-template/adder"
+)
+
 func main() {
-	println("Sample main")
+	fmt.Println(adder.Add(1, 2, 3, 4, 5))
 }
