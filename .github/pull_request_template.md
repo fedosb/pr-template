@@ -5,30 +5,23 @@
 - Check the checklist before submitting the PR to avoid missed items.
 -->
 
-## PR Type
+## Important notes
 <!--
 Remove unnecessary items, keep relevant ones.
 -->
-- [ ] Feature (new functionality)
-- [ ] Bugfix (bug fix)
-- [ ] Hotfix (critical production bug)
-- [ ] Refactoring (no behavior changes)
-- [ ] Docs (documentation update)
-- [ ] Chore (dependency/infrastructure update)
+- **Breaking Change**. Some of the changes in this PR cause malfunctioning of the existing features. 
+Please consider this before merging.
+- **Security Issue**. This PR contains changes that may affect the security of the application.
+- **Need to make a new release**. This PR contains changes that require a new release to be made.
 
 ## Description of Changes
-**What was done?**
 <!--
-Remove unnecessary items, keep relevant ones.
-Briefly describe the essence of the changes. Examples:
-- Added the `/api/v1/users` endpoint for user management.
-- Fixed input validation error in service X.
-- Refactored caching module to reduce memory allocations.
+Describe the changes introduced by this PR. If the changes are not related to the task, provide a brief explanation.
 -->
 
 ## Related Tasks
 <!--
-- Links to tasks in the tracker (Jira/GitHub Issues):  
+Links to tasks in the tracker (Jira/GitHub Issues):  
   Example: `PROJ-123`
 -->
 
@@ -47,8 +40,10 @@ Provide instructions to execute after merge or deployment, if applicable. For ex
 -->
 
 ## Checklist
-- [ ] Test coverage is not reduced (`go test -cover`)
 - [ ] Code documentation updated (Swagger, README, etc.)
+- [ ] The code follows the style guidelines of this project
+- [ ] The code was deployed and tested in a specific environment
+- [ ] The code was double-checked for possible bugs or issues
 - [ ] Verified no resource leaks (goroutines, DB connections)
 - [ ] Changes are backward compatible (if applicable)
 
